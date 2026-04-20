@@ -14,8 +14,7 @@ __pycache__/
 # Environment
 .env
 
-# Data
-data/
 
 # Artifacts
 artifacts/
+

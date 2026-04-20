@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Driving Session Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <p class="eyebrow">DEMO APP</p>
+        <h1>Driving Session Playback + Level-4 Event Labels</h1>
+        <p class="subtext">
+          Enter a session id, play the video, and the segment list auto-scrolls to the
+          active maneuver in real time.
+        </p>
+      </header>
+
+      <section class="controls card">
+        <label for="sessionIdInput">Session ID</label>
+        <input
+          id="sessionIdInput"
+          list="sessionIdList"
+          placeholder="e.g. 201702271017"
+          autocomplete="off"
+        />
+        <datalist id="sessionIdList"></datalist>
+        <button id="loadSessionBtn" type="button">Load Session</button>
+
+        <span id="statusPill" class="pill neutral">Loading catalog...</span>
+      </section>
+
+      <main class="layout">
+        <section class="card panel">
+          <div class="panel-head">
+            <h2>Video</h2>
+            <div id="videoMeta" class="meta"></div>
+          </div>
+          <video id="sessionVideo" preload="metadata"></video>
+          <div class="video-controls" role="group" aria-label="Video controls">
+            <button id="back5Btn" type="button" class="small-btn">-5s</button>
+            <button id="playPauseBtn" type="button" class="small-btn">Play</button>
+            <button id="forward5Btn" type="button" class="small-btn">+5s</button>
+            <input
+              id="seekBar"
+              type="range"
+              min="0"
+              max="1000"
+              step="0.1"
+              value="0"
+              aria-label="Seek timeline"
+            />
+            <span id="timeLabel" class="meta">00:00 / 00:00</span>
+          </div>
+          <p id="videoNote" class="note"></p>
+        </section>
+
+        <section class="card panel">
+          <div class="panel-head">
+            <h2>Segments (JSON Objects)</h2>
+            <div id="activeSegmentBadge" class="meta">No active segment</div>
+          </div>
+          <div id="segmentsContainer" class="segments"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

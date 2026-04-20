@@ -1,0 +1,46 @@
+# Core numerical & data handling
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+matplotlib-inline
+seaborn
+plotly
+
+# Notebooks & interactive work
+jupyter
+jupyterlab
+ipykernel
+
+# File paths, configs, and utilities
+pathlib
+python-dotenv
+tqdm
+
+# Data formats & IO
+pyarrow
+openpyxl
+xlrd
+h5py
+
+# Statistics & exploration helpers
+statsmodels
+scikit-learn
+hdbscan
+joblib
+
+# Deep learning (Level-4 encoder)
+torch
+
+# Image handling (often needed unexpectedly)
+pillow
+
+# Date & time utilities
+python-dateutil
+pytz
+
+# Optional but extremely useful
+rich
+pyyaml

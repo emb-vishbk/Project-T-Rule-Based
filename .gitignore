@@ -14,7 +14,21 @@ __pycache__/
 # Environment
 .env
 
+# Data (shared outside GitHub)
+data/
+
 
 # Artifacts
 artifacts/
+
+# Local app mapping (machine-specific)
+app/video_map.json
+
+# Large media/binary inputs
+*.npy
+*.mp4
+*.m4v
+*.mov
+*.mkv
+*.webm
 

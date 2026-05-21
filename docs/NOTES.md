@@ -9,7 +9,7 @@
 201704141420 - 5:52 → sharp left , smooth right
 
 
------------------------------------------------------------------------------------------------------
+----------
 
 ### Running Command 
 Use the commands below in sequence for the 25 Hz pipeline.
@@ -37,4 +37,3 @@ python traceability/final/run_final_results_25hz.py --data-root data/can_data_25
 # Run Web App
 
 python app/demo_server.py --artifacts-root artifacts/final --video-map app/video_map.sample.json --featured-sessions 201709211444
-

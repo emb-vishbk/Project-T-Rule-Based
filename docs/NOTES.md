@@ -4,7 +4,7 @@
 
 201704141639 - 1:56 → lane change → smooth left and smooth right, 5:22 consecutive smooth turns, 9:32
 
-201409211444 - 7:30 → right - left, 13:08, 16:30 - hairpin bends, 22:03 - consec turns smooth, 36:15, 22:38 -> mountain smooth turn
+201709211444 - 7:30 → right - left, 13:08, 16:30 - hairpin bends, 22:03 - consec turns smooth, 36:15, 22:38 -> mountain smooth turn
 
 201704141420 - 5:52 → sharp left , smooth right
 
@@ -37,3 +37,5 @@ python traceability/final/run_final_results_25hz.py --data-root data/can_data_25
 # Run Web App
 
 python app/demo_server.py --artifacts-root artifacts/final --video-map app/video_map.sample.json --featured-sessions 201709211444
+
+ "201709211444": "E:\\hdd\\hdd_data\\release_2019_07_08\\release_2019_07_08\\2017_09_21_ITS1\\201709211444\\camera\\center\\2017-09-21-14-44-35_new_0.75.mp4",
